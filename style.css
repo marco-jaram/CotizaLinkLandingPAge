@@ -1,0 +1,301 @@
+/* style.css */
+
+:root {
+    --primary-color: #3B82F6; /* Azul vibrante */
+    --dark-color: #1E3A8A;    /* Azul marino profundo */
+    --light-color: #EFF6FF;   /* Azul muy pálido */
+    --text-color: #1F2937;    /* Gris oscuro */
+    --text-secondary: #6B7280; /* Gris medio */
+    --font-title: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* --- HEADER Y NAVEGACIÓN --- */
+.main-header {
+    background: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.login-btn {
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: var(--primary-color);
+}
+
+.login-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* --- SECCIONES GENÉRICAS --- */
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* --- SECCIÓN HERO --- */
+/* --- SECCIÓN HERO --- */
+.hero-section {
+    background-color: var(--light-color);
+    padding: 6rem 0;
+    overflow: hidden; /* Ayuda a evitar desbordamientos */
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Por defecto es 1 columna para móviles */
+    gap: 3rem;
+    align-items: center;
+}
+
+/* En pantallas de 992px o más, cambiamos a 2 columnas */
+@media (min-width: 992px) {
+    .hero-grid {
+        /* 1fr para la imagen, 1.2fr para el texto (le da un poco más de espacio) */
+        grid-template-columns: 1.2fr 1fr; 
+    }
+}
+
+.hero-content {
+    text-align: center; /* Centrado en móvil */
+}
+
+/* En pantallas grandes, alineamos el texto a la izquierda */
+@media (min-width: 992px) {
+    .hero-content {
+        text-align: left;
+    }
+}
+
+.hero-title {
+    font-family: var(--font-title);
+    font-size: 2.8rem; /* Tamaño base para móviles */
+    font-weight: 700;
+    color: var(--dark-color);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+/* Título más grande en pantallas de escritorio */
+@media (min-width: 992px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    max-width: 550px; /* Limita el ancho del texto */
+    margin: 0 auto 2.5rem auto; /* Centrado en móvil */
+    color: var(--text-secondary);
+}
+
+/* En pantallas grandes, quitamos el centrado automático */
+@media (min-width: 992px) {
+    .hero-subtitle {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+}
+
+.cta-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.app-image-placeholder {
+    width: 100%;
+    /* La altura se ajustará proporcionalmente */
+    height: auto; 
+    min-height: 300px; /* Altura mínima para que no se colapse */
+    background-color: #dbeafe;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px; /* Bordes más redondeados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: var(--dark-color);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    /* Perspectiva para un efecto 3D sutil */
+    transform: perspective(1500px) rotateY(-10deg) rotateX(2deg);
+    transition: transform 0.4s ease;
+}
+
+.app-image-placeholder:hover {
+    transform: perspective(1500px) rotateY(-5deg) rotateX(1deg);
+}
+
+/* --- SECCIÓN PAIN POINT (Sin cambios) --- */
+.pain-point-section {
+    background: #fff;
+}
+
+/* --- SECCIÓN DE BENEFICIOS --- */
+.features-section {
+    background-color: #fff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 1.5rem auto;
+    color: var(--primary-color);
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.feature-card h3 {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+}
+
+/* --- SECCIÓN CTA FINAL --- */
+.final-cta-section {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.final-cta-section .section-title {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    background-color: var(--light-color);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* --- RESPONSIVIDAD --- */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .nav-links a:not(.login-btn) {
+        display: none;
+    }
+    .app-image-placeholder {
+        height: 300px;
+    }
+}
