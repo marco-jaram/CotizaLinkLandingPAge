@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CotizaLink - Crea Cotizaciones Profesionales en Segundos</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -301,6 +303,14 @@
             line-height: 1.8;
         }
 
+/* PDF */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto; /* opcional: centrar y dar espacio */
+}
+      
         /* Features Section */
         .features-section {
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -416,6 +426,7 @@
                 opacity: 0;
                 transform: translateX(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -427,6 +438,7 @@
                 opacity: 0;
                 transform: translateX(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -434,9 +446,12 @@
         }
 
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0px);
             }
+
             50% {
                 transform: translateY(-20px);
             }
@@ -506,7 +521,7 @@
             .hero-title {
                 font-size: 1.7rem;
             }
-            
+
             .hero-grid {
                 padding: 7rem 0 3rem;
             }
@@ -525,6 +540,7 @@
         }
     </style>
 </head>
+
 <body>
     <header class="main-header">
         <nav class="container">
@@ -541,12 +557,13 @@
             <div class="container">
                 <div class="hero-grid">
                     <div class="hero-content">
-                        <h1 class="hero-title">Crea cotizaciones profesionales en minutos, no en Horas.</h1>
-                        <p class="hero-subtitle">Diseñado para freelancers, agencias y pequeñas empresas que buscan impresionar a sus clientes y optimizar su proceso de ventas.</p>
+                        <h1 class="hero-title">Crea cotizaciones profesionales en minutos, no en horas.</h1>
+                        <p class="hero-subtitle">Diseñado para freelancers, agencias y pequeñas empresas que buscan
+                            impresionar a sus clientes y optimizar su proceso de ventas.</p>
                         <a href="http://localhost:4200/register" class="cta-button">Comienza tu Prueba Gratuita</a>
                         <p class="cta-note">Prueba gratuita de 7 días. No se requiere tarjeta de crédito.</p>
                     </div>
-                    
+
                     <div class="hero-image">
                         <div class="app-mockup">
                             <div class="mockup-header">
@@ -569,7 +586,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="floating-card floating-card-1">
                             <div style="color: rgba(255, 255, 255, 0.9); font-weight: 600;">✨ Aprobada</div>
                         </div>
@@ -585,35 +602,55 @@
             <div class="container">
                 <h2 class="section-title">¿Sigues usando hojas de cálculo? Es hora de evolucionar.</h2>
                 <p class="section-description">
-                    Deja atrás los errores manuales, el diseño anticuado y las horas perdidas en Excel. CotizaLink te da las herramientas para crear, gestionar y descargar cotizaciones impecables que te ayudarán a cerrar más tratos.
+                    Deja atrás los errores manuales, el diseño anticuado y las horas perdidas en Excel. CotizaLink te da
+                    las herramientas para crear, gestionar y descargar cotizaciones impecables que te ayudarán a cerrar
+                    más tratos.
                 </p>
             </div>
+            
+            <img src="pagina1.svg" alt="Vista previa PDF" class="responsive-img">
         </section>
 
+        
         <section id="features" class="features-section fade-in">
             <div class="container">
                 <h2 class="section-title">Todo lo que necesitas. Nada que no necesites.</h2>
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.542L16.5 21.75l-.398-1.208a3.375 3.375 0 00-2.456-2.456L12.5 17.25l1.208-.398a3.375 3.375 0 002.456-2.456L16.5 13.5l.398 1.208a3.375 3.375 0 002.456 2.456l1.208.398-1.208.398a3.375 3.375 0 00-2.456 2.456z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.542L16.5 21.75l-.398-1.208a3.375 3.375 0 00-2.456-2.456L12.5 17.25l1.208-.398a3.375 3.375 0 002.456-2.456L16.5 13.5l.398 1.208a3.375 3.375 0 002.456 2.456l1.208.398-1.208.398a3.375 3.375 0 00-2.456 2.456z" />
+                            </svg>
                         </div>
                         <h3>Luce Siempre Profesional</h3>
-                        <p>Impresiona a tus clientes con plantillas de cotización elegantes. Personalízalas con tu logo y descarga un PDF listo para enviar en un solo clic.</p>
+                        <p>Impresiona a tus clientes con plantillas de cotización elegantes. Personalízalas con tu logo
+                            y descarga un PDF listo para enviar en un solo clic.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+                            </svg>
                         </div>
                         <h3>Gestión Simplificada</h3>
-                        <p>Ten el control total de tu proceso de ventas. Clasifica tus cotizaciones como Borrador, Enviada, Aprobada o Rechazada y nunca pierdas una oportunidad.</p>
+                        <p>Ten el control total de tu proceso de ventas. Clasifica tus cotizaciones como Borrador,
+                            Enviada, Aprobada o Rechazada y nunca pierdas una oportunidad.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+                            </svg>
                         </div>
                         <h3>Ahorra Tiempo Valioso</h3>
-                        <p>Mantén un catálogo centralizado de tus productos y servicios. Añádelos a tus cotizaciones rápidamente, evitando errores de tipeo y asegurando consistencia.</p>
+                        <p>Mantén un catálogo centralizado de tus productos y servicios. Añádelos a tus cotizaciones
+                            rápidamente, evitando errores de tipeo y asegurando consistencia.</p>
                     </div>
                 </div>
             </div>
@@ -663,4 +700,5 @@
         });
     </script>
 </body>
+
 </html>
